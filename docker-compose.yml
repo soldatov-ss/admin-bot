@@ -6,7 +6,7 @@ services:
     container_name: "${BOT_CONTAINER_NAME:-tg_bot-container}"
     stop_signal: SIGINT
     build:
-      context: tgbot_template
+      context: admin-bot
     working_dir: "/usr/src/app/${BOT_NAME:-tg_bot}"
     volumes:
     - .:/usr/src/app/${BOT_NAME:-tg_bot}
